@@ -1,0 +1,41 @@
+﻿<Page x:Class="PRAktika_itog.ratePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PRAktika_itog"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ratePage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="248*"></RowDefinition>
+            <RowDefinition Height="45.622"></RowDefinition>
+            <RowDefinition Height="39*"></RowDefinition>
+            <RowDefinition Height="64*"></RowDefinition>
+            <RowDefinition Height="53*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+            <ColumnDefinition Width="75*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="rateGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="11" Margin="0,0,0,10" SelectionChanged="animalsGrid_SelectionChanged"/>
+        <Button Grid.Column="8" Content="Добавить" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="20" Width="56" Click="Button_Click"/>
+        <TextBox x:Name="NameTbx" Grid.Column="3" Grid.ColumnSpan="4" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="284" Height="19"/>
+        <Button x:Name="Del" Grid.Column="8" Content="Удалить" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Height="44" Width="56" Click="Del_Click"/>
+        <Button x:Name="Chang" Grid.Column="8" Content="Изменить" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="33" Width="76" Click="Chang_Click"/>
+        <Button x:Name="To_Aviar" Grid.Column="1" Content="к вальерам" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Click="Button_Click_1" Height="20" Width="132"/>
+        <TextBox x:Name="NameTbx_Copy" Grid.Column="3" Grid.ColumnSpan="4" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="284" Height="44"/>
+        <Button x:Name="to_type_of_Animals" Grid.Column="1" Content="к типу животных" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" Grid.ColumnSpan="2" Height="44" Width="131" Click="to_environment_Click"/>
+    </Grid>
+</Page>
